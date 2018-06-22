@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "SamplePod_SVGKit"
-  s.version      = "0.1.0"
+  s.version      = "0.3.1"
   s.summary      = " SamplePod_SVGKit lets a user select an ice cream flavor."
 
   # This description is used to generate tags and improve search results.
@@ -84,29 +84,13 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/pritikumbhar/SamplePod_SVGKitPod.git", :tag => "#{s.version}" }
 
 
-  # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  #
-  #  CocoaPods is smart about how it includes source code. For source files
-  #  giving a folder will include any swift, h, m, mm, c & cpp files.
-  #  For header files it will include any header in the folder.
-  #  Not including the public_header_files will make all headers public.
-  #
-
-  s.source_files  = "SamplePod_SVGKit/*.{swift}"
-s.resources = "SamplePod_SVGKit/*.{png,jpeg,jpg,storyboard,xib}"
+  s.source_files  = "SamplePod_SVGKit/**/*.{swift}"
+s.resources = "SamplePod_SVGKit/*.{storyboard}"
 
   s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
 
-
-  # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  #
-  #  A list of resources included with the Pod. These are copied into the
-  #  target bundle with a build phase script. Anything else will be cleaned.
-  #  You can preserve files from being cleaned, please don't preserve
-  #  non-essential files like tests, examples and documentation.
-  #
 
 
   # s.preserve_paths = "FilesToSave", "MoreFilesToSave"
