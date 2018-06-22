@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		0A004D2520DCE87000B08E05 /* SamplePod_SVGKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A004D2320DCE87000B08E05 /* SamplePod_SVGKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0A004D2C20DCE8F400B08E05 /* DemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A004D2B20DCE8F400B08E05 /* DemoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0A004D2020DCE86F00B08E05 /* SamplePod_SVGKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SamplePod_SVGKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A004D2320DCE87000B08E05 /* SamplePod_SVGKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SamplePod_SVGKit.h; sourceTree = "<group>"; };
 		0A004D2420DCE87000B08E05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A004D2B20DCE8F400B08E05 /* DemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +50,7 @@
 			children = (
 				0A004D2320DCE87000B08E05 /* SamplePod_SVGKit.h */,
 				0A004D2420DCE87000B08E05 /* Info.plist */,
+				0A004D2B20DCE8F400B08E05 /* DemoViewController.swift */,
 			);
 			path = SamplePod_SVGKit;
 			sourceTree = "<group>";
@@ -95,6 +98,7 @@
 				TargetAttributes = {
 					0A004D1F20DCE86F00B08E05 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -131,6 +135,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A004D2C20DCE8F400B08E05 /* DemoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +258,7 @@
 		0A004D2920DCE87000B08E05 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -266,6 +272,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.perennial.SamplePod-SVGKit";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -274,6 +281,7 @@
 		0A004D2A20DCE87000B08E05 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
